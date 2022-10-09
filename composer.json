@@ -1,0 +1,29 @@
+{
+  "name": "lnorby/ip-address-locator",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Lnorby\\IpAddressLocator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Lnorby\\IpAddressLocator\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "László Norbert",
+      "email": "info@laszlonorbert.hu"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
+  }
+}
