@@ -22,15 +22,15 @@ final class IpApiGeolocationProvider implements GeolocationProvider
         }
 
         $geolocation = new Geolocation();
-        $geolocation->countryCode = $response->countryCode;
-        $geolocation->countryName = $response->country;
-        $geolocation->regionCode = $response->region;
-        $geolocation->regionName = $response->regionName;
-        $geolocation->city = $response->city;
-        $geolocation->zipCode = $response->zip;
-        $geolocation->timeZone = $response->timezone;
-        $geolocation->latitude = $response->lat;
-        $geolocation->longitude = $response->lon;
+        $geolocation->countryCode = $response->countryCode ?? '';
+        $geolocation->countryName = $response->country ?? '';
+        $geolocation->regionCode = $response->region ?? '';
+        $geolocation->regionName = $response->regionName ?? '';
+        $geolocation->city = $response->city ?? '';
+        $geolocation->zipCode = $response->zip ?? '';
+        $geolocation->timeZone = $response->timezone ?? '';
+        $geolocation->latitude = $response->lat ?? '';
+        $geolocation->longitude = $response->lon ?? '';
 
         return $geolocation;
     }
